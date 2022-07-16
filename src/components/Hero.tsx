@@ -46,7 +46,7 @@ export default function Hero() {
         <motion.div
           variants={variants}
           animate={cursorVariant}
-          className="bg-black h-[8px] w-[8px] rounded-full  absolute top-0 left-0 pointer-events-none  filter mix-blend-difference blur-0 z-10 "
+          className="bg-black h-[8px] w-[8px] rounded-full  fixed top-0 left-0 pointer-events-none  filter mix-blend-difference blur-0 "
         ></motion.div>
         <motion.div
           variants={variants}
@@ -56,7 +56,7 @@ export default function Hero() {
         <h1
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
-          className=" filter text-[8vw] font-bold  hover:text-red-500 hover:font-black hover:uppercase hover:border pointer-events-auto px-10 rounded-full  transition-all  "
+          className=" filter text-[8vw] font-bold  text-black hover:bg-white   hover:border pointer-events-auto px-10 rounded-full  transition-all  "
         >
           alwaysjad
         </h1>

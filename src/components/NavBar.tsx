@@ -14,7 +14,7 @@ export default function NavBar() {
     return (
       <div className="" key={content}>
         <button
-          className="mx-4 py-0 px-5 tracking-widest hover:bg-gray-300"
+          className="mx-4 py-0 px-5 tracking-widest   hover:bg-gray-300"
           onClick={handleClickNav}
         >
           {content}
@@ -24,8 +24,8 @@ export default function NavBar() {
   };
 
   return (
-    <div className=" m-auto items-center justify-centerl border-b w-screen">
-      <div className="flex flex-row relative m-auto items-center justify-between max-w-7xl w-screen p-5">
+    <div className="relative m-auto items-center justify-centerl border-b w-screen  ">
+      <div className="flex flex-row relative m-auto items-center justify-between  max-w-7xl w-screen p-5">
         <h1>• • •</h1>
 
         <nav className="flex flex-row ">
