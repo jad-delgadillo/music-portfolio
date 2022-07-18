@@ -11,7 +11,7 @@ export default function Container(props: any) {
       <Head>
         <title>{meta.title}</title>
       </Head>
-      <div className="flex flex-col min-h-screen w-screen items-center justify-center ">
+      <div className="flex flex-col min-h-screen w-screen items-center justify-center bg-black ">
         {children}
       </div>
     </>

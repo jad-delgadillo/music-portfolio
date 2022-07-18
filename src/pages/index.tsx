@@ -17,10 +17,10 @@ const Home: NextPage = () => {
       </Head>
       <Container>
         <div className="snap-mandatory snap-y w-screen h-screen overflow-scroll">
-          <section className="reltaive z-0 snap-start" id="navBar">
+          <section className="reltaive snap-start" id="navBar">
             <NavBar />
           </section>
-          <section className="relative snap-start z-10" id="hero">
+          <section className="relative snap-start z-0" id="hero">
             <Hero />
           </section>
           <section className="snap-start" id="projects">
