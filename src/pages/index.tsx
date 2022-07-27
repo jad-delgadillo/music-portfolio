@@ -20,20 +20,17 @@ const Home: NextPage = () => {
           <section className="reltaive snap-start" id="navBar">
             <NavBar />
           </section>
-          <section className="relative snap-start z-0" id="hero">
+          <section className="relative snap-start" id="hero">
             <Hero />
+          </section>
+          <section className="snap-start" id="about">
+            <About />
           </section>
           <section className="snap-start" id="projects">
             <Projects />
           </section>
-          <section className="snap-start" id="about">
-            <About />
-          </section>
           <section className="snap-start" id="contact">
             <Contact />
-          </section>
-          <section className="snap-start" id="about">
-            <About />
           </section>
         </div>
       </Container>

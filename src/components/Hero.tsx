@@ -70,14 +70,14 @@ export default function Hero() {
         <h1
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
-          className=" filter md:text-[8vw] uppercase text-[14vw] font-black mb-10 text-black hover:bg-white   hover:border pointer-events-auto px-10 rounded-full  transition-all  "
+          className=" filter md:text-[8vw]  text-[14vw] font-bold mb-10 text-black hover:bg-white   hover:border pointer-events-auto px-10 rounded-full  transition-all  "
         >
           alwaysjad
         </h1>
         <h1
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
-          className=" filter md:text-[3vw] text-[14vw] font-normal mb-10 text-black hover:bg-white   hover:border pointer-events-auto px-10 rounded-full  transition-all  "
+          className=" filter md:text-[3vw] text-[6vw] font-normal mb-10 text-black hover:bg-white   hover:border pointer-events-auto px-10 rounded-full  transition-all  "
         >
           dangerously good music.
         </h1>

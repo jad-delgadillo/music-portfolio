@@ -26,7 +26,7 @@ export default function NavBar() {
   return (
     <div className="relative m-auto items-center justify-centerl rounded-lg border-b w-screen bg-white   ">
       <div className="flex flex-row relative m-auto items-center justify-between  max-w-7xl w-screen p-5">
-        <h1 className="md:flex hidden">• • •</h1>
+        <h1 className="md:flex hidden font-bold">alw.</h1>
 
         <nav className="flex flex-row ">
           {navLinks.map((nav) => renderNavLink(nav))}
