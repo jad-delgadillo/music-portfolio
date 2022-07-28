@@ -7,7 +7,8 @@ import Layout from "../../components/Layout";
 
 export default function CloverField() {
   const meta = {
-    title: "Cloverfield Paradox",
+    title: "Cloverfield",
+    title2: "Paradox",
     company: "Netflix",
     description: "Super Bowl TV Spot",
     credits: "Credits: Production, Compositon, Sound Design, Mixing and Master",
@@ -20,6 +21,9 @@ export default function CloverField() {
             <div className="leading-tight lg:pr-[5vw] pr-0">
               <h1 className="lg:text-[5.5vw] text-[12.5vw] font-medium">
                 {meta.title}
+              </h1>
+              <h1 className="lg:text-[5.5vw] -mt-5 text-[12.5vw] font-medium">
+                {meta.title2}
               </h1>
               <p className="lg:text-[3vw] text-[7.5vw] font-extralight">
                 {meta.company}

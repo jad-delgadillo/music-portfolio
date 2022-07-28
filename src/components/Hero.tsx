@@ -48,6 +48,7 @@ export default function Hero() {
       leaveDelay: 100,
       height: 34,
       width: 34,
+      backgroundColor: "",
       display: "",
     },
   };
@@ -56,12 +57,12 @@ export default function Hero() {
       <motion.div
         variants={variants}
         animate={cursorVariant}
-        className="cursor"
+        className="cursor z-10"
       ></motion.div>
       <motion.div
         variants={variants}
         animate={"textLink"}
-        className="border border-black  h-[50px] w-[50px] rounded-full fixed top-0 left-0 pointer-events-none  "
+        className="border border-black  h-[50px] w-[50px] rounded-full z-10 fixed top-0 left-0 pointer-events-none  "
       ></motion.div>
 
       <div className=" flex flex-col min-h-screen rounded-[3.5rem] bg-white items-center justify-center">

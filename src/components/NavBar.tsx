@@ -15,7 +15,7 @@ export default function NavBar({ className }: any) {
     return (
       <div className="" key={content}>
         <button
-          className="md:mx-4 mx-4 py-0 md:px-5 tracking-widest hover:bg-gray-300"
+          className="md:mx-4 mx-4 py-0 md:px-5 tracking-widest rounded-full hover:bg-gray-300"
           onClick={handleClickNav}
         >
           {content}
