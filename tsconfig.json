@@ -16,6 +16,6 @@
     "incremental": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Cursor.ts", "src/components/Cursor.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Cursor.ts", "src/components/CustomCursor/Cursor.js"],
   "exclude": ["node_modules"]
 }

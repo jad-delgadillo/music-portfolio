@@ -24,11 +24,11 @@ export default function NavBar() {
   };
 
   return (
-    <div className="relative m-auto items-center justify-centerl rounded-lg border-b w-screen bg-white   ">
-      <div className="flex flex-row relative m-auto items-center justify-between  max-w-7xl w-screen p-5">
-        <h1 className="md:flex hidden font-bold">alw.</h1>
+    <div className="relative m-auto items-center justify-center text-xl rounded-lg border-b w-screen bg-white   ">
+      <div className="flex flex-row m-auto max-w-7xl justify-between w-screen p-5">
+        <h1 className="md:flex hidden text-2xl font-bold">alw.</h1>
 
-        <nav className="flex flex-row  m-auto items-center justify-center ">
+        <nav className="flex flex-row md:m-0 m-auto ">
           {navLinks.map((nav) => renderNavLink(nav))}
         </nav>
       </div>

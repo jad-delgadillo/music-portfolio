@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useCursor from "../hooks/useCursor";
 import { motion } from "framer-motion";
-import Cursor from "./Cursor";
+import Cursor from "./CustomCursor/Cursor";
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({
@@ -50,7 +50,7 @@ export default function Hero() {
       leaveDelay: 100,
       height: 34,
       width: 34,
-      display: "none",
+      display: "",
     },
   };
   return (

@@ -8,10 +8,6 @@ export default function Projects() {
           Projects
         </h1>
         <div className="p-10"></div>
-        <p className="md:text-[2vw]">
-          I find joy translating the artist vision into music. <br /> Bringing
-          ideas that provoke emotions to life.
-        </p>
       </div>
     </div>
   );
