@@ -4,9 +4,9 @@ import React from "react";
 
 export default function Project({ description, id, title, thumbnail }: any) {
   return (
-    <div className="p-5">
+    <div className="md:p-5 md:my-0 my-3 p-0">
       <Link href={`/MusicProjects/${id}`} passHref scroll={false}>
-        <div className=" hover:scale-[103%] transition-all cursor-pointer hover:shadow-xl rounded-xl p-2 hover:ring-1 ring-indigo-200 hover:bg-zinc-50">
+        <div className=" md:hover:scale-[103%] transition-all cursor-pointer hover:shadow-xl rounded-xl p-2 hover:ring-1 ring-indigo-200 hover:bg-zinc-50">
           <Image
             src={thumbnail}
             alt={title}

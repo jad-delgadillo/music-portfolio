@@ -8,7 +8,7 @@ export default function About() {
           Passionate music producer, <br /> and storyteller enthusiast.
         </h1>
         <div className="p-10"></div>
-        <p className="md:text-[2.5vw] text-[3.8vw] md:text-left text-justify leading-tight">
+        <p className="md:text-[2.5vw] text-[4.8vw] md:text-left text-justify leading-tight">
           I find joy translating the artist vision into music. <br /> Bringing
           ideas that provoke emotions to life.
         </p>

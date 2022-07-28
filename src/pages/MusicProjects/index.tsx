@@ -11,19 +11,13 @@ export default function MusicProjects() {
   return (
     <div>
       <Container>
-        <div className="bg-white w-screen min-h-screen items-center justify-center flex rounded-[3.5rem]">
-          <div className="flex flex-col items-start justify-center  p-20">
-            <h1 className="text-[5.5rem] cursor-default font-normal">
-              <a href="#_" className="relative group">
-                <span className="absolute hidden md:flex w-0 h-[100%] group-hover:w-full transition-all ease-out duration-300 bg-black"></span>
-                <span className="relative group-hover:w-full md:hover:text-white hover:text-indigo-500 transition-all ease-out duration-300 ">
-                  {" "}
-                  Projects.{" "}
-                </span>
-              </a>
+        <div className="bg-white w-screen min-h-screen items-center justify-center rounded-[3.5rem]">
+          <div className="flex flex-col items-start justify-center p-20">
+            <h1 className="cursor-default font-normal md:text-[5.5vw] text-[14vw]">
+              Projects
             </h1>
 
-            <p className="py-10 tracking-wider">
+            <p className="py-10 md:text-[1vw] text-[4.8vw] tracking-wider text-justify">
               I had the fortune to work on this media campaigns doing the
               composition and production of the music.
             </p>
