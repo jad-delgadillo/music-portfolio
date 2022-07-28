@@ -17,20 +17,20 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <div className="snap-mandatory snap-y w-screen min-h-screen h-screen overflow-scroll">
+        <div className="snap-mandatory snap-y w-screen min-h-screen h-screen md:overflow-scroll">
           <section className="reltaive snap-start" id="navBar">
             <NavBar />
           </section>
-          <section className="relative snap-start" id="hero">
+          <section className="relative snap-start bg-black" id="hero">
             <Hero />
           </section>
-          <section className="snap-start" id="about">
+          <section className="snap-start bg-black" id="about">
             <About />
           </section>
-          <section className="snap-start" id="projects">
+          <section className="snap-start bg-black" id="projects">
             <MusicProjects />
           </section>
-          <section className="snap-start" id="contact">
+          <section className="snap-start bg-black" id="contact">
             <Contact />
           </section>
         </div>
