@@ -15,16 +15,19 @@ export default function Contact() {
       <div className="flex md:flex-row flex-col items-center justify-between w-screen max-w-full mx-auto">
         <div className="flex flex-row items-center ">
           <Button>
-            <a className="hover:cursor-pointer transition-all" href="">
+            <a
+              className="hover:cursor-pointer md:text-3xl text-xl transition-all"
+              href=""
+            >
               hola@alwaysjad.dev
             </a>
           </Button>
-          <h1 className="text-xl font-normal ml-10 hidden md:flex">
+          <h1 className="text-xl font-extralight ml-10 hidden md:flex">
             © alw • A Creative Company • 2022
           </h1>
         </div>
         <h1 className="text-2xl font-bold md:flex hidden">alw.</h1>
-        <h1 className="text-sm font-normal mt-10 md:hidden flex">
+        <h1 className="text-xs font-normal mt-10 md:hidden flex">
           © alw • A Creative Company • 2022
         </h1>
       </div>
