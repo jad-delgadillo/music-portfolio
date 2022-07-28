@@ -12,9 +12,9 @@ export default function MusicProjects() {
     <div>
       <Container>
         <div className="bg-white w-screen min-h-screen items-center justify-center rounded-[3.5rem]">
-          <div className="flex flex-col items-start justify-center p-20">
+          <div className="flex flex-col items-start justify-center p-10">
             <h1 className="cursor-default font-normal md:text-[5.5vw] text-[14vw]">
-              Projects
+              Projects.
             </h1>
 
             <p className="py-10 md:text-[1vw] text-[4.8vw] tracking-wider text-justify">

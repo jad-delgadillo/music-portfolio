@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <div className="snap-mandatory snap-y w-screen h-screen overflow-scroll">
+        <div className="snap-mandatory snap-y w-screen min-h-screen h-screen overflow-scroll">
           <section className="reltaive snap-start" id="navBar">
             <NavBar />
           </section>
