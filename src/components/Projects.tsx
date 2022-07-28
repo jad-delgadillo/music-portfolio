@@ -8,6 +8,7 @@ export default function Projects() {
           Projects.
         </h1>
         <div className="p-10"></div>
+        <div className="border-2 border-black p-44 rounded-3xl"></div>
       </div>
     </div>
   );
