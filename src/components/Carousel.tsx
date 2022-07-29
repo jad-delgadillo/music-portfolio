@@ -18,7 +18,7 @@ const variants = {
   exit: (direction: number) => {
     return {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
+      x: direction < 0 ? 0 : -0,
       opacity: 0,
     };
   },
@@ -100,8 +100,9 @@ export default function Carousel() {
               </button>
               {asset?.type === "video" ? (
                 <video
-                  className="felx overflow-hidden items-center justify-center rounded-xl"
+                  className="felx items-center justify-center rounded-xl"
                   controls
+                  preload="metadata"
                 >
                   <source src={asset?.src} type="video/mp4" />
                 </video>
