@@ -102,7 +102,7 @@ export default function Carousel() {
                 <video
                   className="felx items-center justify-center rounded-xl"
                   controls
-                  preload="metadata"
+                  preload="auto"
                 >
                   <source src={asset?.src} type="video/mp4" />
                 </video>
