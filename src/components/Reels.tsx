@@ -81,7 +81,7 @@ export default function Carousel() {
             >
               <motion.div className="asset flex flex-row items-center justify-center lg:w-[1000px] w-[100%]">
                 <button
-                  onClick={() => paginate(1)}
+                  onClick={() => paginate(-1)}
                   className="hover:bg-trueYellow p-2 rounded-full hover:scale-[110%] mr-5  hover:shadow-xl shadow-black transition-all"
                 >
                   <svg
@@ -112,7 +112,7 @@ export default function Carousel() {
                 )}
 
                 <button
-                  onClick={() => paginate(-1)}
+                  onClick={() => paginate(1)}
                   className="hover:bg-trueYellow p-2 ml-5 rounded-full hover:scale-[110%] hover:shadow-xl shadow-black transition-all"
                 >
                   <svg

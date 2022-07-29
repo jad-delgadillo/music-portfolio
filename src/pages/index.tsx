@@ -5,7 +5,7 @@ import Contact from "../components/Contact";
 import Container from "../components/Container";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
-import Carousel from "../components/Carousel";
+import Reels from "../components/Reels";
 import MusicProjects from "./MusicProjects";
 
 const Home: NextPage = () => {
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             <MusicProjects />
           </section>
           <section className="snap-start bg-black" id="projects">
-            <Carousel />
+            <Reels />
           </section>
           <section className="snap-start bg-black" id="contact">
             <Contact />
