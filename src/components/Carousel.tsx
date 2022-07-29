@@ -40,7 +40,7 @@ export default function Carousel() {
   const asset = reels[contentIndex];
 
   return (
-    <div className="flex flex-col min-h-screen  bg-white rounded-[3.5rem] p-20">
+    <div className="flex flex-col min-h-screen bg-white rounded-[3.5rem] p-20">
       <div className="leading-none">
         <h1 className="lg:text-[5.5vw] md:text-[12.5vw] text-[14vw] font-normal ">
           Reels.
@@ -50,7 +50,7 @@ export default function Carousel() {
       <div className="items-center justify-center m-auto">
         <div className="w-[70%] flex flex-col m-auto items-center justify-center"></div>
 
-        <div className="flex justify-center ">
+        <div className="flex flex-col m-auto items-center justify-center ">
           <AnimatePresence initial={false} exitBeforeEnter>
             <motion.div
               className={
@@ -80,8 +80,8 @@ export default function Carousel() {
               }}
             >
               <button
-                onClick={() => paginate(-1)}
-                className="hover:bg-trueYellow p-2 rounded-full hover:scale-[110%] mr-5 hover:shadow-xl shadow-black transition-all"
+                onClick={() => paginate(1)}
+                className="hover:bg-trueYellow p-2 rounded-full hover:scale-[110%] mr-5  hover:shadow-xl shadow-black transition-all"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -99,15 +99,18 @@ export default function Carousel() {
                 </svg>
               </button>
               {asset?.type === "video" ? (
-                <video className="rounded-xl" controls>
+                <video
+                  className="felx items-center justify-center rounded-xl"
+                  controls
+                >
                   <source src={asset?.src} type="video/mp4" />
                 </video>
               ) : (
                 ""
               )}
               <button
-                onClick={() => paginate(1)}
-                className="hover:bg-trueYellow p-2 ml-5 rounded-full hover:scale-[110%] mr-5 hover:shadow-xl shadow-black transition-all"
+                onClick={() => paginate(-1)}
+                className="hover:bg-trueYellow p-2 ml-5 rounded-full hover:scale-[110%] hover:shadow-xl shadow-black transition-all"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
