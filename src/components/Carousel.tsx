@@ -6,7 +6,7 @@ import { wrap } from "popmotion";
 const variants = {
   enter: (direction: number) => {
     return {
-      x: direction > 0 ? 100 : -100,
+      x: direction > 0 ? 0 : -0,
       opacity: 0,
     };
   },
@@ -50,11 +50,11 @@ export default function Carousel() {
       <div className="items-center  justify-center m-auto">
         <div className="w-[70%] flex flex-col m-auto items-center  justify-center"></div>
 
-        <div className="flex flex-col m-auto items-center  justify-center ">
+        <div className="flex flex-col m-auto items-start  justify-center ">
           <AnimatePresence initial={false} exitBeforeEnter>
             <motion.div
               className={
-                "asset flex flex-row items-center justify-center lg:w-[1000px] w-[100%]"
+                "asset flex flex-col items-start justify-center lg:w-[1000px] w-[100%]"
               }
               key={page}
               custom={direction}
@@ -79,55 +79,61 @@ export default function Carousel() {
                 }
               }}
             >
-              <button
-                onClick={() => paginate(1)}
-                className="hover:bg-trueYellow p-2 rounded-full hover:scale-[110%] mr-5  hover:shadow-xl shadow-black transition-all"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
+              <motion.div className="asset flex flex-row items-center justify-center lg:w-[1000px] w-[100%]">
+                <button
+                  onClick={() => paginate(1)}
+                  className="hover:bg-trueYellow p-2 rounded-full hover:scale-[110%] mr-5  hover:shadow-xl shadow-black transition-all"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
-              </button>
-              {asset?.type === "video" ? (
-                <video
-                  className="felx items-center justify-center rounded-xl"
-                  controls
-                  preload="auto"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 19l-7-7 7-7"
+                    />
+                  </svg>
+                </button>
+                {asset?.type === "video" ? (
+                  <video
+                    className="felx items-center justify-center rounded-xl"
+                    controls
+                    preload="metadata"
+                  >
+                    <source src={asset?.src} type="video/mp4" />
+                  </video>
+                ) : (
+                  ""
+                )}
+
+                <button
+                  onClick={() => paginate(-1)}
+                  className="hover:bg-trueYellow p-2 ml-5 rounded-full hover:scale-[110%] hover:shadow-xl shadow-black transition-all"
                 >
-                  <source src={asset?.src} type="video/mp4" />
-                </video>
-              ) : (
-                ""
-              )}
-              <button
-                onClick={() => paginate(-1)}
-                className="hover:bg-trueYellow p-2 ml-5 rounded-full hover:scale-[110%] hover:shadow-xl shadow-black transition-all"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </button>
+              </motion.div>
+              <motion.h1 className="mt-2 font-extralight">
+                {asset?.name}
+              </motion.h1>
             </motion.div>
           </AnimatePresence>
         </div>
