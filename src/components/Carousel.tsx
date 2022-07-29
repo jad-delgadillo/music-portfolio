@@ -47,10 +47,10 @@ export default function Carousel() {
         </h1>
         <p className="font-extralight ml-1">more music.</p>
       </div>
-      <div className="items-center justify-center m-auto">
-        <div className="w-[70%] flex flex-col m-auto items-center justify-center"></div>
+      <div className="items-center  justify-center m-auto">
+        <div className="w-[70%] flex flex-col m-auto items-center  justify-center"></div>
 
-        <div className="flex flex-col m-auto items-center justify-center ">
+        <div className="flex flex-col m-auto items-center  justify-center ">
           <AnimatePresence initial={false} exitBeforeEnter>
             <motion.div
               className={
@@ -100,7 +100,7 @@ export default function Carousel() {
               </button>
               {asset?.type === "video" ? (
                 <video
-                  className="felx items-center justify-center rounded-xl"
+                  className="felx overflow-hidden items-center justify-center rounded-xl"
                   controls
                 >
                   <source src={asset?.src} type="video/mp4" />
