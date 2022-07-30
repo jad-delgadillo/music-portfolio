@@ -65,7 +65,7 @@ export default function Hero() {
         className="border border-black  h-[50px] w-[50px] rounded-full z-10 fixed top-0 left-0 pointer-events-none  "
       ></motion.div>
 
-      <div className=" flex flex-col min-h-screen rounded-[3.5rem] bg-white items-center justify-center">
+      <div className=" flex flex-col min-h-screen md:rounded-[3.5rem] rounded-b-[3.5rem] bg-white items-center justify-center">
         <h1
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}

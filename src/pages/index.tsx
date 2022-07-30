@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <section className="snap-start bg-black" id="projects">
             <MusicProjects />
           </section>
-          <section className="snap-start bg-black" id="projects">
+          <section className="snap-start bg-black" id="reels">
             <Reels />
           </section>
           <section className="snap-start bg-black" id="contact">
