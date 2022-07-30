@@ -32,7 +32,7 @@ export default function MusicProjects() {
               <Project
                 id="CloverField"
                 title="Cloverfield Paradox"
-                description="Worldwide Broadcast Campaign"
+                description="Super Bowl TV Spot"
                 thumbnail={thumbClover}
               ></Project>
               <Project
