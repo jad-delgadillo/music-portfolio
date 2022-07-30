@@ -14,6 +14,14 @@ export default function Container(props: any) {
     <>
       <Head>
         <title>{meta.title}</title>
+        <meta content={meta.description} name="description" />
+        <meta property="og:site_name" content="Alwaysjad" />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:image" content={meta.image} />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:image" content={meta.image} />
       </Head>
       <div className="flex flex-col min-h-screen w-screen items-center justify-center bg-black ">
         {children}

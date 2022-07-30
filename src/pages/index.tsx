@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Container from "../components/Container";
@@ -11,11 +11,6 @@ import MusicProjects from "./MusicProjects";
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>alw.</title>
-        <meta name="description" content="Alwaysjad music portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Container>
         <div className="snap-mandatory snap-y w-screen min-h-screen h-screen md:overflow-scroll">
           <section className="reltaive snap-start" id="navBar">
