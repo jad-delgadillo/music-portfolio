@@ -4,7 +4,11 @@ import React from "react";
 export default function Container(props: any) {
   const { children } = props;
   const meta = {
-    title: "alw music",
+    title: "Alwaysjad.— dangerously good music.",
+    description: `Bringing ideas that provoke emotions to life.`,
+    image:
+      "https://res.cloudinary.com/dzepeibjw/image/upload/v1659152027/Metadata-image---alw_nrcnx6.png",
+    type: "website",
   };
   return (
     <>
