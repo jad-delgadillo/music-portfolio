@@ -44,6 +44,7 @@ export default function Hero() {
     textLink: {
       x: mousePosition.x - 17,
       y: mousePosition.y - 17,
+
       enterDelay: 100,
       leaveDelay: 100,
       height: 34,
@@ -69,7 +70,7 @@ export default function Hero() {
         <h1
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
-          className=" filter md:text-[8vw]  text-[14vw] font-bold mb-10 text-black hover:bg-white   hover:border pointer-events-auto px-10 rounded-full  transition-all  "
+          className=" filter md:text-[8vw] text-black text-[14vw] font-bold mb-10  hover:bg-white   hover:border pointer-events-auto px-10 rounded-full  transition-all  "
         >
           alwaysjad
         </h1>
