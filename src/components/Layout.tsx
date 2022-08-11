@@ -63,7 +63,7 @@ export default function Layout(props: any) {
       <motion.div
         variants={variants}
         animate={"textLink"}
-        className="border border-black  h-[50px] w-[50px] rounded-full fixed top-0 left-0 pointer-events-none  "
+        className="cursors border border-black  h-[50px] w-[50px] rounded-full fixed top-0 left-0 pointer-events-none  "
       ></motion.div>
       <div className="flex flex-col min-h-screen w-screen items-center justify-center pointer-events-auto bg-white ">
         {children}

@@ -21,3 +21,17 @@ body {
   pointer-events: none;
   mix-blend-mode: difference;
 }
+
+.cursors {
+  border: solid;
+  border-width: thin;
+  border-color: white;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}

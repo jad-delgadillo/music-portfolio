@@ -49,7 +49,7 @@ export default function Hero() {
       leaveDelay: 100,
       height: 34,
       width: 34,
-      backgroundColor: "",
+      backgroundColor: "  ",
       display: "",
     },
   };
@@ -65,7 +65,7 @@ export default function Hero() {
         variants={variants}
         animate={"textLink"}
         transition={{ type: "spring", mass: 0.00001 }}
-        className="border border-black  h-[50px] w-[50px] rounded-full z-10 fixed top-0 left-0 pointer-events-none  "
+        className="cursors border border-black  h-[50px] w-[50px] rounded-full z-10 fixed top-0 left-0 pointer-events-none  "
       ></motion.div>
 
       <div className=" flex flex-col min-h-screen md:rounded-[3.5rem] rounded-b-[3.5rem] bg-white items-center justify-center">
