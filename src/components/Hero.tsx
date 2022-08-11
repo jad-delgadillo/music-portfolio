@@ -58,11 +58,13 @@ export default function Hero() {
       <motion.div
         variants={variants}
         animate={cursorVariant}
+        transition={{ type: "spring", mass: 0.1 }}
         className="cursor z-10"
       ></motion.div>
       <motion.div
         variants={variants}
         animate={"textLink"}
+        transition={{ type: "spring", mass: 0.00001 }}
         className="border border-black  h-[50px] w-[50px] rounded-full z-10 fixed top-0 left-0 pointer-events-none  "
       ></motion.div>
 
