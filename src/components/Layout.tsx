@@ -67,9 +67,13 @@ export default function Layout(props: any) {
         transition={{ type: "spring", mass: 0.00001 }}
         className="cursors border border-black  h-[50px] w-[50px] rounded-full z-10 fixed top-0 left-0 pointer-events-none  "
       ></motion.div>
-      <div className="flex flex-col min-h-screen w-screen items-center justify-center pointer-events-auto bg-white ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="flex flex-col min-h-screen w-screen items-center justify-center pointer-events-auto bg-white "
+      >
         {children}
-      </div>
+      </motion.div>
     </>
   );
 }

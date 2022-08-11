@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Container(props: any) {
   const { children } = props;
@@ -23,9 +24,13 @@ export default function Container(props: any) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
       </Head>
-      <div className="flex flex-col min-h-screen w-screen items-center justify-center bg-black ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="flex flex-col min-h-screen w-screen items-center justify-center bg-black "
+      >
         {children}
-      </div>
+      </motion.div>
     </>
   );
 }

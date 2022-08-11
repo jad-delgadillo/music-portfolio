@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "../../components/Project";
 import Container from "../../components/Container";
+import { motion } from "framer-motion";
 
 import thumbHostile from "../../../public/assets/trailers/Hostile-Planet-Natgeo.jpg";
 import thumbClover from "../../../public/assets/trailers/cloverfield-paradox.jpg";
@@ -22,7 +23,18 @@ export default function MusicProjects() {
               composition and production of the music.
             </p>
 
-            <div className="flex flex-col items-center justify-center md:flex-row">
+            <motion.div
+              id="Project"
+              initial={{ opacity: 0, translateY: 50 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              transition={{
+                type: "spring",
+                bounce: 0.4,
+                duration: 1,
+                // delay: i * 0.4,
+              }}
+              className="flex flex-col items-center justify-center md:flex-row"
+            >
               <Project
                 id="HostilePlanet"
                 title="Hostile Planet"
@@ -47,7 +59,7 @@ export default function MusicProjects() {
                 description="Tonight Show with Jimmy Fallon"
                 thumbnail={thumbIsYou}
               ></Project>
-            </div>
+            </motion.div>
           </div>
         </div>
       </Container>
