@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Menu, Transition } from "@headlessui/react";
 
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({
@@ -68,7 +69,7 @@ export default function Hero() {
         className="cursors border border-black  h-[50px] w-[50px] rounded-full z-10 fixed top-0 left-0 pointer-events-none  "
       ></motion.div>
 
-      <div className=" flex flex-col min-h-screen md:rounded-[3.5rem] rounded-b-[3.5rem] bg-white items-center justify-center">
+      <div className="flex flex-col min-h-screen md:rounded-[3.5rem] rounded-b-[3.5rem] rounded-t-[3.5rem] bg-white items-center justify-center">
         <h1
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}

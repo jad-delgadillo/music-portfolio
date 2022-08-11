@@ -58,12 +58,14 @@ export default function Layout(props: any) {
       <motion.div
         variants={variants}
         animate={cursorVariant}
-        className="cursor"
+        transition={{ type: "spring", mass: 0.1 }}
+        className="cursor z-10"
       ></motion.div>
       <motion.div
         variants={variants}
         animate={"textLink"}
-        className="cursors border border-black  h-[50px] w-[50px] rounded-full fixed top-0 left-0 pointer-events-none  "
+        transition={{ type: "spring", mass: 0.00001 }}
+        className="cursors border border-black  h-[50px] w-[50px] rounded-full z-10 fixed top-0 left-0 pointer-events-none  "
       ></motion.div>
       <div className="flex flex-col min-h-screen w-screen items-center justify-center pointer-events-auto bg-white ">
         {children}

@@ -26,10 +26,10 @@ export default function NavBar({ className }: any) {
   };
 
   return (
-    <div className="relative m-auto items-center justify-center md:rounded-lg rounded-t-[3.5rem] md:border-b w-screen bg-white   ">
-      <div className="flex flex-row m-auto max-w-7xl md:px-0 px-10 justify-between pt-10 md:pt-5 w-screen p-5">
+    <div className="relative m-auto items-center justify-center md:rounded-lg rounded-t-[3.5rem] md:border-b w-screen bg-white md:flex md:flex-row">
+      <div className="flex md:relative absolute flex-row m-auto max-w-7xl md:px-0 px-10 justify-between pt-10 md:pt-5 w-screen p-5">
         <Link href={"/"}>
-          <a className="flex font-bold">alw.</a>
+          <a className="flex z-10 font-bold">alw.</a>
         </Link>
         <div className="md:flex md:flex-row items-center hidden ">
           <nav className="flex flex-row">
