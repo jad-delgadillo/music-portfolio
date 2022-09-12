@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Container>
-        <div className="snap-mandatory snap-y w-screen min-h-screen h-screen md:overflow-scroll">
+        <div className="snap-mandatory snap-y w-screen md:min-h-screen h-screen md:overflow-scroll">
           <section className="reltaive snap-start" id="navBar">
             <NavBar />
           </section>

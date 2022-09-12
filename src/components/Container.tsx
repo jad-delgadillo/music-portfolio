@@ -27,7 +27,7 @@ export default function Container(props: any) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="flex flex-col min-h-screen w-screen items-center justify-center bg-black "
+        className="flex flex-col md:min-h-screen w-screen items-center justify-center bg-black "
       >
         {children}
       </motion.div>
