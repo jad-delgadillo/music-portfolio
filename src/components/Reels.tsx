@@ -40,7 +40,7 @@ export default function Carousel() {
   const asset = reels[contentIndex];
 
   return (
-    <div className="flex flex-col min-h-screen bg-white rounded-[3.5rem] p-20">
+    <div className="flex flex-col md:min-h-screen h-[750px] bg-white rounded-[3.5rem] p-20">
       <div className="leading-none">
         <h1 className="lg:text-[5.5vw] md:text-[12.5vw] text-[14vw] font-normal ">
           Reels.

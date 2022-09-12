@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col min-h-screen items-start md:text-left text-center justify-between p-20 bg-trueYellow rounded-[3.5rem]">
+    <div className="flex flex-col md:min-h-screen h-screen items-start md:text-left text-center justify-between p-20 bg-trueYellow rounded-[3.5rem]">
       <div className="tracking-tighter leading-none">
         <h1 className="md:text-[5.5vw] text-[14vw] font-normal">
           Planning to make some music?
