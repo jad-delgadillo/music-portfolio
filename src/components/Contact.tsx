@@ -16,6 +16,8 @@ export default function Contact() {
         <div className="flex flex-row items-center ">
           <Button>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:cursor-pointer md:text-3xl text-xl transition-all"
               href="mailto:hola@alwaysjad.dev"
             >
