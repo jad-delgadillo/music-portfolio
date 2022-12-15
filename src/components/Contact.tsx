@@ -17,7 +17,7 @@ export default function Contact() {
           <Button>
             <a
               className="hover:cursor-pointer md:text-3xl text-xl transition-all"
-              href=""
+              href="mailto:hola@alwaysjad.dev"
             >
               hola@alwaysjad.dev
             </a>
