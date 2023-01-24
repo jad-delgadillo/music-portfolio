@@ -4,12 +4,13 @@ import React from "react";
 import Button from "../../components/Button";
 import Container from "../../components/Container";
 import Layout from "../../components/Layout";
+import NavBar from "../../components/NavBar";
 
-export default function IsYou() {
+export default function HostilePlanet() {
   const meta = {
-    title: "All I see is You",
-    company: "Tonight Show with Jimmy Fallon",
-    description: "National TV Broadcast",
+    title: "Hostile Planet",
+    company: "National Geographic",
+    description: "Worldwide Broadcast Campaign",
     credits: "Credits: Production, Compositon, Sound Design, Mixing and Master",
   };
   return (
@@ -33,7 +34,7 @@ export default function IsYou() {
             </div>
             <div className="lg:w-[40%] w-[100%] lg:mt-0 mt-10">
               <video
-                src="/assets/videos/IsYou.mov"
+                src="/assets/videos/hostile.mp4"
                 controls
                 className="rounded-xl"
               ></video>
@@ -41,7 +42,8 @@ export default function IsYou() {
           </div>
         </div>
         <div className="mb-10">
-          <Link href={"javascript:history.back()"}>
+          <Link href={"https://music.alwaysjad.dev"}>
+            {/* href={"javascript:history.back()"} */}
             <a className="font-medium">
               <Button>Back.</Button>
             </a>

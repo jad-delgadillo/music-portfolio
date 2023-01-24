@@ -4,13 +4,12 @@ import React from "react";
 import Button from "../../components/Button";
 import Container from "../../components/Container";
 import Layout from "../../components/Layout";
-import NavBar from "../../components/NavBar";
 
-export default function HostilePlanet() {
+export default function MagicMike() {
   const meta = {
-    title: "Hostile Planet",
-    company: "National Geographic",
-    description: "Worldwide Broadcast Campaign",
+    title: "Magic Mike",
+    company: "Las Vegas Show",
+    description: "Worldwide Broadcast",
     credits: "Credits: Production, Compositon, Sound Design, Mixing and Master",
   };
   return (
@@ -34,7 +33,7 @@ export default function HostilePlanet() {
             </div>
             <div className="lg:w-[40%] w-[100%] lg:mt-0 mt-10">
               <video
-                src="/assets/videos/hostile.mp4"
+                src="/assets/videos/magic.mov"
                 controls
                 className="rounded-xl"
               ></video>
@@ -42,7 +41,7 @@ export default function HostilePlanet() {
           </div>
         </div>
         <div className="mb-10">
-          <Link href={"javascript:history.back()"}>
+          <Link href={"https://music.alwaysjad.dev"}>
             <a className="font-medium">
               <Button>Back.</Button>
             </a>

@@ -45,7 +45,7 @@ export default function CloverField() {
           </div>
         </div>
         <div className="mb-10">
-          <Link href={"javascript:history.back()"}>
+          <Link href={"https://music.alwaysjad.dev"}>
             <a className="font-medium">
               <Button>Back.</Button>
             </a>

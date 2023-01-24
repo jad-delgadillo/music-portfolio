@@ -6,7 +6,7 @@ import Container from "../components/Container";
 import Hero from "../components/Hero";
 import NavBar from "../components/NavBar";
 import Reels from "../components/Reels";
-import MusicProjects from "./MusicProjects";
+import MusicProjects from "./music-projects";
 
 const Home: NextPage = () => {
   return (

@@ -5,11 +5,11 @@ import Button from "../../components/Button";
 import Container from "../../components/Container";
 import Layout from "../../components/Layout";
 
-export default function MagicMike() {
+export default function IsYou() {
   const meta = {
-    title: "Magic Mike",
-    company: "Las Vegas Show",
-    description: "Worldwide Broadcast",
+    title: "All I see is You",
+    company: "Tonight Show with Jimmy Fallon",
+    description: "National TV Broadcast",
     credits: "Credits: Production, Compositon, Sound Design, Mixing and Master",
   };
   return (
@@ -33,7 +33,7 @@ export default function MagicMike() {
             </div>
             <div className="lg:w-[40%] w-[100%] lg:mt-0 mt-10">
               <video
-                src="/assets/videos/magic.mov"
+                src="/assets/videos/IsYou.mov"
                 controls
                 className="rounded-xl"
               ></video>
@@ -41,7 +41,7 @@ export default function MagicMike() {
           </div>
         </div>
         <div className="mb-10">
-          <Link href={"javascript:history.back()"}>
+          <Link href={"https://music.alwaysjad.dev"}>
             <a className="font-medium">
               <Button>Back.</Button>
             </a>
